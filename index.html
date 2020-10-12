@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script>
+    function handleOnDown(x) {
+      x.style.color = "red";
+      x.style.backgroundColor = "blue";
+    }
+
+    function handleOnUp(x) {
+      x.style.color = "blue";
+      x.style.backgroundColor = "red";
+    }
+
+    function handleOnPress(x) {
+      x.style.color = "black";
+      x.style.backgroundColor = "yellow";
+    }
+  </script>
+</head>
+
+<body>
+  <input type="text" onkeydown="handleOnDown(this)" onkeyup="handleOnUp(this)" onkeypress="handleOnPress(this)" />
+</body>
+
+</html>
